@@ -1,0 +1,70 @@
+:root{
+    --bs-orange: #fd7e14;
+}
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+body{
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: rgb(250, 236, 225);
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    position: relative;
+   
+}
+h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color: #fc760891;
+    left: 0;
+    bottom: 0%; 
+    transition: .25s height;
+    z-index: -1;
+}
+h1:hover::after{
+   height: 55%;
+}
+.content{
+    border-top:  2px black dotted;
+}
+h2{
+    background-image: linear-gradient(to right ,rgb(26, 94, 26),rgb(163, 163, 22));
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Righteous", cursive;
+    font-size: 25px;
+   
+}
+.form-control:focus {
+    
+    border-color: var(--bs-orange);
+    box-shadow: 0 0 0 0.2rem  #f7770f3b;
+}
+td{
+    vertical-align: middle;
+}
+.visit-btn
+{
+    background-color: rgb(160, 212, 63);
+    border:1px solid rgb(112, 146, 48);
+    
+}
+.visit-btn:hover
+{
+    background-color: rgb(140, 187, 53);
+    border:1px solid rgb(119, 156, 51);
+    
+    
+}
+.visit-btn a:active{
+    color: black !important;
+    
+}
+
